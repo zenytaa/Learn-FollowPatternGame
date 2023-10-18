@@ -12,7 +12,7 @@ $(document).keydown(() => {
   }
 });
 
-$(".btn").on("click", function () {
+$(".btn").on("input", function () {
   let userChosenColor = $(this).attr("id");
   userClickedPattern.push(userChosenColor);
   animate(userChosenColor);
